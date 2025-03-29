@@ -1,3 +1,4 @@
+#### Task 3:Spatial visualization
 #### UHF42 Boiler Emissions Choropleth
 
 This choropleth map displays the average boiler emissions throughout the UHF42 regions in New York City. The regions are shaded according to their emission intensity, with darker colors indicating higher values. The map has been reprojected to Web Mercator for uniform rendering, and tooltips display the name of each region and the precise emission level when hovered over. This static map effectively serves as a clear spatial reference for identifying patterns of emission concentration across healthcare zones.
