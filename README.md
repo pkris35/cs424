@@ -2,7 +2,7 @@
 
 This choropleth map shows average boiler emissions across UHF42 regions in NYC. The regions are filled based on emission intensity, with darker shades representing higher values. The geometry is reprojected to Web Mercator for consistent rendering, and tooltips reveal the region name and exact emission level on hover. This map provides a static but clear spatial baseline for observing emission concentration patterns across healthcare zones.
 
-![UHF42 Boiler Emissions Choropleth](images3/BoilerEmissionss.png)
+![UHF42 Boiler Emissions Choropleth](images3/BoilerEmissions.png)
 
 #### UHF42 Annual Vehicle Miles Traveled 
 
