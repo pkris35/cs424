@@ -54,10 +54,37 @@ This visualization combines two choropleth maps which are giving us the the spat
 
 By dividing these views while maintaining a good encoding and layout, we can see temporal-spatial trends in pollutants in an organized and understandable way.
 
-
-
 *PM2.5 & NO2 with Time Slider:*  
 ![CD Annual PM2.5 and NO2](images3/CDPM2.5NO2withtime.gif)
 
 *Ozone Seasonal Dropdown:*  
 ![CD Seasonal Ozone](images3/CDO3withtime.gif)
+
+
+## Task 4: Linked Spatial Visualization  
+**[View Visualization](https://pkris35.github.io/cs424/linked_spatial_visualization_final1.html)**
+
+### The attributes being visualized
+- Spatial: UHF42 regions of New York City.
+- Quantitative: Average boiler emissions per region.
+- Categorical: Borough each region belongs to.
+- Temporal: Time Period of emissions data.
+
+This visualization was designed to explore geographic and temporal patterns in emissions. By combining spatial and non-spatial views, users can observe how emissions vary across regions and over time, and how these trends differ between boroughs.
+
+### interaction techniques and methods implemented
+- Region selection via click filters the scatter plot and bar chart.
+- Hovering over a region highlights it with a border.
+- Selecting a borough from the bar chart filters the map and scatter plot.
+- Opacity encoding visually separates selected from non-selected elements.
+
+### The design 
+- Borough-based color encoding was applied consistently to both the scatter and bar chart.
+- A choropleth map was chosen for spatial representation.
+- Layout: the map is placed on the left; scatter and bar charts are stacked on the right for vertical comparison.
+
+### The experimentation process using Vega-Lite
+We initially used a quantitative color scale for emissions but switched to borough-based categorical colors for consistency. 
+
+
+
