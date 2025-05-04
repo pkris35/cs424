@@ -1,12 +1,11 @@
 # Air Quality Visual Analytics Project
 
-This project explores spatiotemporal patterns and pollutant trends across New York City using GeoJSON and shapefile datasets, visualized through Vega-Lite charts. It includes interactive bar charts, scatterplots, and spatial maps with filtering capabilities.
 
 ---
 
 ## Task 3: Bar Chart Visualization
 
-### 📥 1. Data Loading Node
+###  1. Data Loading Node
 ![Task3 Data Load](images4/dataloadingtask3.png)
 ```python
 import geopandas as gpd
@@ -288,9 +287,9 @@ return merged_gdf
 ```
 ---
 
-## 🗺️ Task 5: Spatial Analysis
+##  Task 5: Spatial Analysis
 
-### 📥 1. Data Loading Node
+###  1. Data Loading Node
 ![Task5 Data Load](images4/dataloadingtask5.png)
 ```python
 import geopandas as gpd
@@ -302,7 +301,7 @@ uhf42 = gpd.read_file("UHF42.shp")
 return air_quality, uhf42
 ```
 
-### 🧮 2. Computation Node
+###  2. Computation Node
 ![Task5 Computation](images4/catask5.png)
 ```python
 air_quality, uhf42 = arg
@@ -320,7 +319,7 @@ merged_gdf = merged_gdf.dropna(subset=['emissions_value'])
 return merged_gdf
 ```
 
-### 🔧 3. Transformation Node
+###  3. Transformation Node
 ![Task5 Transformation](images4/dttask5.png)
 ```python
 import geopandas as gpd
@@ -345,8 +344,68 @@ return merged_gdf
 
 ---
 
-## 📘 Instructions
+# Task 6 
 
-- Replace all `images/...` with your actual screenshots.
-- Replace `<... Vega-Lite JSON>` placeholders with full Vega-Lite specs from your project.
-- Save this as `README.md` in your project root.
+## Overview [D_W → V_W → U_Z → I]
+This project implements a complete visual analytics pipeline from raw data to insights. The system combines spatial and tabular visualizations with interactive exploration features.
+
+## Data Processing [D_W]
+
+### Input Files [S]
+- `Airquality.csv`: Air quality measurements (S₁)
+- `UHF42.shp`: Geographic boundaries (S₂)
+
+### Processing Steps
+1. **Data Filtering [D_C]**
+   - Extract UHF42 regions only
+   - Group measurements by geographic area
+
+2. **Data Cleaning [D_C]**
+   - Standardize region ID formats
+   - Handle missing values
+
+3. **Data Integration [D_I]**
+   - Merge air quality data with spatial boundaries
+   - Validate region matching
+
+4. **Spatial Transformation [D_T]**
+   - Convert CRS (2263 → 3857) for web visualization
+
+## Visualizations [V_W]
+
+### Spatial Map [V_S]
+- UTK Node implementation
+- Choropleth of emission values
+- Linked selection 
+
+### Scatterplot [V_S]
+- Vega-Lite implementation
+- X: Emissions value (quantitative)
+- Y: Region ID (nominal)
+- Interactive tooltips
+
+## Interaction Features [U_Z]
+
+### Cross-Visual Linking [U_V]
+- Selections between map and scatterplot
+- Data Pool node used
+
+### Interaction Methods
+
+**Brush Selection [U_V → U_CV]** is used in scatterplot and spatial map
+  
+## Implementation
+- **Data Processing**: GeoPandas/Pandas [D_W]
+- **Spatial Viz**: UTK Node [V_W]  
+- **Statistical Viz**: Vega-Lite [V_W]
+- **Interaction**: Data Pool node [U_Z]
+
+### Glossary
+- [D_W] Data Preprocessing
+- [D_C] Data Cleaning
+- [D_I] Data Integration
+- [D_T] Data Transformation  
+- [V_W] Visualization
+- [U_Z] User Interaction
+- [I] Insight
+- [S] Source Data
