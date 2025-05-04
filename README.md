@@ -4,6 +4,7 @@
 ---
 
 ## Task 3: Bar Chart Visualization
+![Interaction Demo](images4/Task3.gif)
 
 ###  1. Data Loading Node
 ![Task3 Data Load](images4/dataloadingtask3.png)
@@ -171,6 +172,7 @@ return df
 ---
 
 ##  Task 4: Interactive Visualization
+![Interaction Demo](images4/Task4.gif)
 
 ###  1. Data Loading Node
 ![Task4 Data Load](images4/dataloadingtask4.png)
@@ -227,6 +229,8 @@ return merged_gdf
 ###  4. Data Pool Node:
 ![Task4 Plot](images4/datapooltask5.png)
 ###  5. Interactive Plot with Vegalite Node:
+![Interaction Demo](images4/Task5.gif)
+
 ![Task4 Plot](images4/interactivemaptask4.png)
 ```json
 {
