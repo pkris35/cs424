@@ -229,8 +229,6 @@ return merged_gdf
 ###  4. Data Pool Node:
 ![Task4 Plot](images4/datapooltask5.png)
 ###  5. Interactive Plot with Vegalite Node:
-![Interaction Demo](images4/Task5.gif)
-
 ![Task4 Plot](images4/interactivemaptask4.png)
 ```json
 {
@@ -292,7 +290,7 @@ return merged_gdf
 ---
 
 ##  Task 5: Spatial Analysis
-
+![Interaction Demo](images4/Task5.gif)
 ###  1. Data Loading Node
 ![Task5 Data Load](images4/dataloadingtask5.png)
 ```python
