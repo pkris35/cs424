@@ -34,13 +34,13 @@ return df
 ```
 
 ### 📊 2. CD Region Bar Chart
-![Task3 CD Chart](images/task3_cd_chart.png)
+![Task3 CD Chart](images4/vegalitecdtask3.png)
 ```json
 <CD Region Vega-Lite JSON>
 ```
 
 ### 🏘️ 3. UHF42 Region Bar Chart
-![Task3 UHF42 Chart](images/task3_uhf42_chart.png)
+![Task3 UHF42 Chart](images4/vegaliteuhf42task3.png)
 ```json
 <UHF42 Region Vega-Lite JSON>
 ```
