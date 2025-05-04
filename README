@@ -7,7 +7,7 @@ This project explores spatiotemporal patterns and pollutant trends across New Yo
 ## ✅ Task 3: Bar Chart Visualization
 
 ### 📥 1. Data Loading Node
-![Task3 Data Load](images/task3_data_load.png)
+![Task3 Data Load](images4/dataloadingtask3.png)
 ```python
 import geopandas as gpd
 
@@ -50,7 +50,7 @@ return df
 ## 🔍 Task 4: Scatterplot Visualization
 
 ### 📥 1. Data Loading Node
-![Task4 Data Load](images/task4_data_load.png)
+![Task4 Data Load](images4/dataloadingtask4.png)
 ```python
 import geopandas as gpd
 import pandas as pd
@@ -62,7 +62,7 @@ return air_quality, uhf42
 ```
 
 ### 🧮 2. Computation Node
-![Task4 Computation](images/task4_computation.png)
+![Task4 Computation](images4/catask4.png)
 ```python
 air_quality, uhf42 = arg
 
@@ -80,7 +80,7 @@ return merged_gdf
 ```
 
 ### 🔧 3. Transformation Node
-![Task4 Transformation](images/task4_transform.png)
+![Task4 Transformation](images4/dttask4.png)
 ```python
 import geopandas as gpd
 
@@ -112,7 +112,7 @@ return merged_gdf
 ## 🗺️ Task 5: Spatial Analysis
 
 ### 📥 1. Data Loading Node
-![Task5 Data Load](images/task5_data_load.png)
+![Task5 Data Load](images4/dataloadingtask5.png)
 ```python
 import geopandas as gpd
 import pandas as pd
@@ -124,7 +124,7 @@ return air_quality, uhf42
 ```
 
 ### 🧮 2. Computation Node
-![Task5 Computation](images/task5_computation.png)
+![Task5 Computation](images4/catask5.png)
 ```python
 air_quality, uhf42 = arg
 
@@ -142,7 +142,7 @@ return merged_gdf
 ```
 
 ### 🔧 3. Transformation Node
-![Task5 Transformation](images/task5_transform.png)
+![Task5 Transformation](images4/dttask5.png)
 ```python
 import geopandas as gpd
 
