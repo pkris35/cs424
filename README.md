@@ -101,8 +101,8 @@ merged_gdf.metadata = {
 return merged_gdf
 ```
 
-### 📈 4. Vega-Lite Scatterplot
-![Task4 Scatterplot](images/task4_scatterplot.png)
+### 📈 4. Data Pool Node:
+![Task4 Scatterplot](images4/datapooltask5.png)
 ```json
 <Scatterplot Vega-Lite JSON>
 ```
